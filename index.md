@@ -2,6 +2,16 @@
 title: pwned
 ---
 
+<a href="https://wkovacs64.github.io/pwned">
+  <img
+    alt="logo"
+    title="logo"
+    src="https://wkovacs64.github.io/pwned/logo.png"
+    align="right"
+    width="85"
+  />
+</a>
+
 ## Installation
 
 ```shell
