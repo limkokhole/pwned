@@ -14,6 +14,9 @@ title: pwned
 
 ## Installation
 
+Download and install [Node.js](https://nodejs.org/en/download/), then install
+`pwned` globally using `npm`:
+
 ```shell
 npm install pwned -g
 ```
