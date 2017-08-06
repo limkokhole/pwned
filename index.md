@@ -14,8 +14,8 @@ title: pwned
 
 ## Installation
 
-Download and install [Node.js](https://nodejs.org/en/download/), then install
-`pwned` globally using `npm`:
+Download and install [Node.js][nodejs], then install `pwned` globally using
+`npm`:
 
 ```shell
 npm install pwned -g
@@ -26,22 +26,24 @@ npm install pwned -g
 ```
 Usage: pwned [option | command]
 
+Each command has its own -h (--help) option.
+
+
+Options:
+
+  -v, --version  output the version number
+  -h, --help     output usage information
+
 
 Commands:
 
   ba [options] <account>      get all breaches for an account (username or email address)
-  breaches [options]          get all breaches in the system
   breach [options] <name>     get a single breached site by breach name
+  breaches [options]          get all breaches in the system
   dc [options]                get all data classes in the system
   pa [options] <email>        get all pastes for an account (email address)
+  pw [options] <password>     check a password (plain text or SHA1 hash) for public exposure
   search [options] <account>  search breaches and pastes for an account (username or email address)
-
-Each command has its own -h (--help) option.
-
-Options:
-
-  -h, --help     output usage information
-  -v, --version  output the version number
 ```
 
 #### Examples
@@ -134,6 +136,12 @@ $ pwned pa nobody@nowhere.com
   EmailCount: 82071
 ```
 
+Check a password to see if it has been exposed in a data breach:
+```
+$ pwned pw Password1234
+Oh no — pwned!
+```
+
 Search both breaches and pastes for an account (truncating breach data):
 ```
 $ pwned search nobody -t
@@ -159,4 +167,7 @@ pastes:   null
 
 ## License
 
-This tool is distributed under the [MIT License](https://github.com/wKovacs64/pwned/tree/master/LICENSE.txt).
+This tool is distributed under the [MIT License][license].
+
+[nodejs]: https://nodejs.org/en/download/
+[license]: https://github.com/wKovacs64/pwned/tree/master/LICENSE.txt
