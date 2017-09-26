@@ -169,5 +169,9 @@ pastes:   null
 
 This tool is distributed under the [MIT License][license].
 
+[![Sponsor][sponsor-image]][sponsor-link]
+
 [nodejs]: https://nodejs.org/en/download/
 [license]: https://github.com/wKovacs64/pwned/tree/master/LICENSE.txt
+[sponsor-image]: https://app.codesponsor.io/embed/1Z34ZozRAhWZ8QKV42A2yt3r/wKovacs64/pwned.svg
+[sponsor-link]: https://app.codesponsor.io/link/1Z34ZozRAhWZ8QKV42A2yt3r/wKovacs64/pwned
